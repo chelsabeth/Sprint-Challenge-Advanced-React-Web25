@@ -9,7 +9,7 @@ function Display(props) {
     return (
         <div className="card-container">
         {props.data.map(data => (
-            <div className="individual-card" key={data.id}>
+            <div key={data.id} className="individual-card">
                 <h2>Name: {data.name}</h2>
                 <p>Country: {data.country}</p>
                 <p>Amout of Searches: {data.searches}</p>
