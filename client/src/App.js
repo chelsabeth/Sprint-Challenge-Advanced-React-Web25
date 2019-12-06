@@ -17,10 +17,14 @@ class App extends React.Component {
       this.setState({
         apiCall: res.data
       });
-      console.log("API data: ", this.state.apiCall)
+      // console.log("API data: ", this.state.apiCall)
     })
     .catch(err => console.log(err));
   }
+
+  // componentWillUnmount() {
+
+  // }
 
   render() {
     return (
