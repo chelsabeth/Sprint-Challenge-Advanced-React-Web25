@@ -3,13 +3,23 @@ import "./App.css";
 import axios from "axios";
 
 class App extends React.Component {
-  constructor() {
-    super();
-    setState = {
-      ApiCall: []
-    };
+  state = {
+    apiCall: []
+  };
 
+  componentDidMount() {
+    axios 
+    .get(`http://localhost:5000/api/players`)
+    .then(res => {
+      this.setState({
+        apiCall: res.data
+      });
+      console.log("API data: ", this.state.apiCall)
+    })
+    .catch(err => console.log(err));
+  }
 
+  render() {
     return (
       <div className="App">
         <h1>
