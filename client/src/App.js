@@ -3,6 +3,7 @@ import "./App.css";
 import axios from "axios";
 
 import Display from "./components/Display";
+import NavBar from "./components/NavBar";
 
 class App extends React.Component {
   state = {
@@ -25,6 +26,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>
+          <NavBar/>
           Women's World Cup App <span>🏆</span>
           <Display data={this.state.apiCall}/>
         </h1>
