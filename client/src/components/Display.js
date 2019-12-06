@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Chart from "./Chart";
+// import Chart from "./Chart";
 
 function Display(props) { 
     const { data } = props;

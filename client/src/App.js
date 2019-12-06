@@ -4,6 +4,7 @@ import axios from "axios";
 
 import Display from "./components/Display";
 import NavBar from "./components/NavBar";
+import Chart from "./components/Chart";
 
 class App extends React.Component {
   state = {
@@ -32,6 +33,7 @@ class App extends React.Component {
         <h1>
           <NavBar/>
           Women's World Cup App <span role="img" aria-label="Trophy">🏆</span>
+          <Chart searches={this.state.apiCall.searches}/>
           <Display data={this.state.apiCall}/>
         </h1>
       </div>
