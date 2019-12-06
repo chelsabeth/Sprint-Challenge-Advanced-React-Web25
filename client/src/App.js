@@ -33,7 +33,7 @@ class App extends React.Component {
         <h1>
           <NavBar/>
           Women's World Cup App <span role="img" aria-label="Trophy">🏆</span>
-          <Chart searches={this.state.apiCall.searches}/>
+          <Chart searches={this.state.apiCall}/>
           <Display data={this.state.apiCall}/>
         </h1>
       </div>

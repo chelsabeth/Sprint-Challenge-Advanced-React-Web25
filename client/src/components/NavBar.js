@@ -9,7 +9,7 @@ const Navbar = () => {
   };
   return (
     <nav className="navbar">
-      <p>click to switch between dark and light mode</p>
+      {/* <p>click to switch between dark and light mode</p> */}
       <div className="dark-mode__toggle">
         <div
           onClick={toggleMode}

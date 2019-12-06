@@ -1,15 +1,15 @@
-import React from "react";
+// import React from "react";
 
-function ChartMap(props) {
-    const {playerData} = props
+// function ChartMap(props) {
+//     const {playerData} = props
 
-    return (
-        <div>
-            {props.playerData.map(playerData => (
-                <div key={playerData.}>
-            ))}
-        </div>
-    )
-}
+//     return (
+//         <div>
+//             {props.playerData.map(playerData => (
+//                 <div key={playerData.}>
+//             ))}
+//         </div>
+//     )
+// }
 
-export default ChartMap;
+// export default ChartMap;
