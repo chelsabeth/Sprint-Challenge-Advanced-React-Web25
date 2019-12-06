@@ -2,6 +2,8 @@ import React from "react";
 import "./App.css";
 import axios from "axios";
 
+import Display from "./components/Display";
+
 class App extends React.Component {
   state = {
     apiCall: []
@@ -24,6 +26,7 @@ class App extends React.Component {
       <div className="App">
         <h1>
           Women's World Cup App <span>🏆</span>
+          <Display data={this.state.apiCall}/>
         </h1>
       </div>
     );
