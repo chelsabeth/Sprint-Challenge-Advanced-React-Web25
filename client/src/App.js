@@ -27,7 +27,7 @@ class App extends React.Component {
       <div className="App">
         <h1>
           <NavBar/>
-          Women's World Cup App <span>🏆</span>
+          Women's World Cup App <span role="img" aria-label="Trophy">🏆</span>
           <Display data={this.state.apiCall}/>
         </h1>
       </div>
